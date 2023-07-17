@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Filmovi{% endblock %}
+{% block main %}
+
+<div class="container">
+    <br>
+    <h1>Filmovi</h1>
+    <br>
+    <hr>
+
+    <div class="card-deck">
+        <div class="card">
+        <a href="{{url_for('movie',id= movie1[0])}}">
+          <img src="{{movie1[5]}}" class="card-img" alt="Slika filma 1">
+          <div class="card-img-overlay d-flex flex-column">
+            <h5 class="card-title mt-auto">{{movie1[1]}}</h5>
+          </div>
+        </a>
+        </div>
+  
+        <div class="card">
+            <a href="{{url_for('movie',id= movie2[0])}}">
+              <img src="{{movie2[5]}}" class="card-img" alt="Slika filma 1">
+              <div class="card-img-overlay d-flex flex-column">
+                <h5 class="card-title mt-auto">{{movie2[1]}}</h5>
+              </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="{{url_for('movie',id= movie3[0])}}">
+                <img src="{{movie3[5]}}" class="card-img" alt="Slika filma 1">
+                <div class="card-img-overlay d-flex flex-column">
+                <h5 class="card-title mt-auto">{{movie3[1]}}</h5>
+                </div>
+            </a>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

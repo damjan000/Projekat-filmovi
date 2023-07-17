@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Filmovi - 404 Page Not Found{% endblock %}
+{% block main %}
+
+<div class="error-container">
+  <h1>404 Stranica nije pronađena</h1>
+  <p>Ups! Stranica koju tražite nije pronađena.</p>
+  <p>Molimo provjerite URL ili se vratite na <a href="{{url_for('home',_external=True)}}">Pocetna</a>.</p>
+</div>
+
+{% endblock %}

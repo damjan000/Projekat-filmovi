@@ -1,0 +1,206 @@
+/* Prilagođeni CSS stilovi */
+
+*{
+  font-family: "Times New Roman", serif;
+}
+.navbar{
+  height: 80px;
+  color: #dfdfdf;
+}
+.navbar a{
+  font-size: x-large;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+  
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-right {
+    margin-left: auto;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  body {
+    font-family: "Times New Roman", serif;
+    background-image: url('../background.jpg');
+    background-size: 100%;
+  }
+
+  .user-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form-group button:hover {
+    background-color: #45a049;
+  } 
+  .error-container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .error-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .error-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  } 
+  .contact-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .form-group label {
+    font-weight: bold;
+  }
+
+  .submit-btn {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .container h1{
+    text-align: center;
+  }
+  .card a{
+    color: black;
+    text-shadow: 2px 2px 5px black;
+    font-size: x-large;
+    background-color: #fff;
+  }
+
+  .card h5{
+    color: black;
+    text-shadow: 2px 2px 5px black;
+    font-size: x-large;
+    background-color: #fff;
+  }
+
+  .movie-info-container {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .movie-info-container img {
+    max-width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .movie-info-container h2 {
+    margin-bottom: 10px;
+  }
+
+  .movie-info-container p {
+    margin-bottom: 20px;
+  }
+  .comments-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .comment p {
+    margin-bottom: 10px;
+  }
+
+  .comment .movie-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .comment .rating {
+    color: #fdd835;
+    font-size: 16px;
+  }
+
+  .comment .comment-text {
+    font-size: 14px;
+  }

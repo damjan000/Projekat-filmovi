@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Filmovi - Registracija{% endblock %}
+{% block main%}
+
+<div class="comments-container">
+    {% for comment in comments %}
+        <div class="comment">
+            <p class="movie-title"><strog>Film: </strong>{{comment[5]}}</p>
+            <p class="comment-text"><strong>Moj komentar: </strong>{{comment[4]}}</p>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Filmovi - Registracija{% endblock %}
+{% block main%}
+
+<div class="movie-info-container">
+    <img src="{{img}}" alt="Film">
+    <div class="movie-details">
+      <h2>{{title}}</h2>
+      <p><strong>Žanr:</strong> {{genre}}</p>
+      <p><strong>Trajanje filma:</strong> {{duration}} minuta</p>
+      <p><strong>Glavni glumci:</strong>
+        {% for actor in actors %}
+        {% for act in actor %}
+        {{act}},
+        {% endfor %}
+        {% endfor %}
+    </p>
+      <p><strong>Opis:</strong> {{description}}</p>
+      
+    </div>
+    <form method="POST">
+        <div class="form-group">
+          <label for="komentar">Vaš komentar:</label>
+          {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+          <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Unesite komentar"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Posalji komentar</button>
+        </div>
+      </form>
+      <div class="comments-container">
+        {% for comment in comments %}
+            <div class="comment">
+                <p class="movie-title"><strong>Korisnik: </strong>{{comment[3]}}</p>
+                <p class="comment-text"><strong>Komentar na film: </strong>{{comment[4]}}</p>
+            </div>
+        {% endfor %}
+        </div>
+  </div>
+
+{% endblock %}
